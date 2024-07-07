@@ -1,0 +1,9 @@
+SOURCE: PyPI
+
+Python-dotenv reads key-value pairs from a .env file and can set them as environment variables. It helps in the 
+development of applications following the 12-factor principles.
+
+If your application takes its configuration from environment variables, like a 12-factor application, launching it in development is not very practical because you have to set those environment variables yourself.
+
+To help you with that, you can add Python-dotenv to your application to make it load the configuration from a .env 
+file when it is present (e.g. in development) while remaining configurable via the environment
