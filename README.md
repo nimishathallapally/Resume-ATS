@@ -16,13 +16,32 @@ This project aims to enhance the recruitment process by evaluating resumes again
 - PyPDF2
 - Google GenerativeAI
 - Python-dotenv
+## Project Steps
 
-## Install Dependencies
-- run `pip install -r requirements.txt`
+1. **Environment Setup:**
+   - Configured project dependencies and loaded environment variables using `dotenv`.
 
-## Set up environment variables (if applicable, update .env file):
-- `GOOGLE_API_KEY=your_google_api_key_here`
+2. **API Configuration:**
+   - Integrated Google's generative AI API for content generation.
+
+3. **Text Extraction:**
+   - Implemented PDF text extraction using `PyPDF2` to process uploaded resumes.
+
+4. **User Interface:**
+   - Developed a Streamlit web app for user interaction.
+
+5. **Model Interaction:**
+   - Utilized `genai`'s `gemini-pro` model for evaluating resume-job description matches.
+
+6. **Display Results:**
+   - Presented evaluation results (JD Match, Missing Keywords, Profile Summary) on the frontend.
+
+7. **Error Handling:**
+    - Implemented error management for invalid responses or missing resume uploads.
 
 ## Usage
-- To run the application run `streamlit run src/main.py`
+
+- **Installation:** Install dependencies with `pip install -r requirements.txt`.
+- **Setup:** Set up environment variables, including `GOOGLE_API_KEY=your_google_api_key_here`.
+- **Execution:** Run the application using `streamlit run src/main.py`.
 - **Evaluate resumes:** Upload a resume and paste a job description to evaluate the match and missing keywords.
