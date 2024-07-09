@@ -54,8 +54,7 @@ def extract_text_pdf(file):
 
 def format_response(response):
     try:
-        # json.loads(response) takes the string response and parses it into a Python dictionary.
-        response_text=eval(response)
+        response_text=json.loads(response) # takes the string response and parses it into a Python dictionary.
 
         # Extract Key value Pairs
         formatted_response=(
@@ -65,10 +64,8 @@ def format_response(response):
         )
         return formatted_response
         # If response is not a valid JSON string, json.loads() raises a json.JSONDecodeError.
-    except (SyntaxError, KeyError) as e:
+    except(json.JSONDecodeError,KeyError) as e:
         return f"Error in formatting response: {e}"
-    # except(json.JSONDecodeError,KeyError) as e:
-        # return f"Error in formatting response: {e}"
     
 # Prompt Template
 
