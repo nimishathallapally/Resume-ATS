@@ -60,7 +60,8 @@ def format_response(response):
         formatted_response=(
             f"JD Match: {response_text['JD Match']}\n\n\n"
             f"Missing Keywords:\n {response_text['Missing Keywords']}\n\n\n"
-            f"Profile Summary:\n {response_text['Profile Summary']}\n"
+            f"Profile Summary:\n {response_text['Profile Summary']}\n\n\n"
+            f"Suggestion:\n {response_text['Suggestion']}\n"
         )
         return formatted_response
         # If response is not a valid JSON string, json.loads() raises a json.JSONDecodeError.
@@ -76,7 +77,7 @@ input_prompt='''
     description: {jd}
 
     I want the response in one single string having the structure
-    {{"JD Match": "%", "Missing Keywords": [], "Profile Summary": ""}}
+    {{"JD Match": "%", "Missing Keywords": [], "Profile Summary": "",  "Suggestion": ""}}
 '''
 
 # Streamlit App
