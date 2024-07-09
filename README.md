@@ -8,6 +8,7 @@ This project aims to enhance the recruitment process by evaluating resumes again
 - **Keyword Matching:** Analyze the match percentage of the resume with the provided job description.
 - **Missing Keywords:** Identify keywords missing in the resume that are crucial for the job role.
 - **Profile Summary:** Summarize the overall suitability of the resume for the job.
+- **Suggestion:** Provide personalized suggestions for improving the resume based on identified gaps and keyword matches.
 
 ## Technologies Used
 
